@@ -8,7 +8,7 @@ namespace Zoo
     {
         public bool _hasFlowers;
 
-        public Plant() : this("No rank given", false){ }
+        public Plant() : this("Ingen rank angivet", false){ }
 
         public Plant(string Rank, bool HasFlowers) : base (Rank)
         {

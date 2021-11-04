@@ -8,7 +8,7 @@ namespace Zoo
     {
         public string _rank;
 
-        public Organism() : this("No rank given") { }
+        public Organism() : this("Ingen rank angivet") { }
 
         public Organism(string Rank)
         {
