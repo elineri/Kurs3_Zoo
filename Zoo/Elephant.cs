@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Elin Ericstam SUT21
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +12,8 @@ namespace Zoo
 
         public Elephant() : this("Ingen rank angiven", "Inget namn angivet", "Inget kön angivet", 0, "Ingen föda angivet", "Inget levnadsområde angivet", true, 0) { }
 
-        public Elephant(string Rank, string SciName, string Gender, int Age, string Diet, string LivingArea, bool IsWild, double Weight) : base(Rank, SciName, Gender, Age, Diet, LivingArea, IsWild)
+        public Elephant(string Rank, string SciName, string Gender, int Age, string Diet, string LivingArea, bool IsWild, double Weight) 
+                        : base(Rank, SciName, Gender, Age, Diet, LivingArea, IsWild)
         {
             this._weight = Weight;
         }
@@ -25,6 +28,16 @@ namespace Zoo
         public void Jump()
         {
             Console.WriteLine("Elefanten försöker hoppa men det går inte...");
+        }
+
+        public override void Eat()
+        {
+            Console.WriteLine("Elefanten äter " + _diet);
+        }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("Elefanten sover\n");
         }
 
         public override void PrintInfo()

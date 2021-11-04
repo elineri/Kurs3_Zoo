@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Elin Ericstam SUT21
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -26,18 +28,18 @@ namespace Zoo
         public virtual void MakeSound()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Djuret låter!\n");
+            Console.WriteLine("Djuret låter!");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
 
-        public void Eat()
+        public virtual void Eat()
         {
-            Console.WriteLine("Djuret äter.\n");
+            Console.WriteLine("Djuret äter");
         }
 
-        public void Sleep()
+        public virtual void Sleep()
         {
-            Console.WriteLine("Djuret sover\n");
+            Console.WriteLine("Djuret sover");
         }
 
         public virtual void PrintInfo()

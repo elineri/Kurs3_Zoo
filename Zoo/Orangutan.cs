@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Elin Ericstam SUT21
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +12,8 @@ namespace Zoo
 
         public Orangutan() : this("Ingen rank angiven", "Inget namn angivet", "Inget kön angivet", 0, "Ingen föda angivet", "Inget levnadsområde angivet", true, 0, 0) { }
 
-        public Orangutan(string Rank, string Type, string Gender, int Age, string Diet, string LivingArea, bool IsWild, double Height, int NumOfSpecies) : base(Rank, Type, Gender, Age, Diet, LivingArea, IsWild, Height)
+        public Orangutan(string Rank, string Type, string Gender, int Age, string Diet, string LivingArea, bool IsWild, double Height, int NumOfSpecies) 
+                         : base(Rank, Type, Gender, Age, Diet, LivingArea, IsWild, Height)
         {
             this._numOfSpecies = NumOfSpecies;
         }
@@ -18,7 +21,7 @@ namespace Zoo
         public override void MakeSound()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Orangutangen låter oooh ook ook ook!\n");
+            Console.WriteLine("Orangutangen låter oooh ook ook ook...\n");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
 
@@ -27,10 +30,20 @@ namespace Zoo
             Console.WriteLine("Orangutangen klättrar upp i trädet.");
         }
 
+        public override void Eat()
+        {
+            Console.WriteLine("Orangutanen äter " + _diet);
+        }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("Organgutangen sover\n");
+        }
+
         public override void PrintInfo()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Info för orangutang");
+            Console.WriteLine("Info för Orangutang");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine($"Rank:\t\t\t {_rank}");
             Console.WriteLine($"Vilt djur:\t\t {_isWild}");
