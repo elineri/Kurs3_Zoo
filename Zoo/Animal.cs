@@ -45,6 +45,7 @@ namespace Zoo
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Info för Djur");
             Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine($"Rank:\t\t\t {_rank}");
             Console.WriteLine($"Vetenskapligt namn:\t {_sciName}");
             Console.WriteLine($"Kön:\t\t\t {_gender}");
             Console.WriteLine($"Ålder:\t\t\t {_age}");
