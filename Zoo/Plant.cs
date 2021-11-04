@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Plant : Organism
+    public class Plant : Organism
     {
         public bool _hasFlowers;
 

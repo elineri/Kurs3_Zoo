@@ -4,40 +4,40 @@ using System.Text;
 
 namespace Zoo
 {
-    public class Elephant : Mammal
+    public class Cow : Mammal
     {
-        public double _weight;
+        public string _colour;
 
-        public Elephant() : this("Ingen rank angiven", "Inget namn angivet", "Inget kön angivet", 0, "Ingen föda angivet", "Inget levnadsområde angivet", true, 0) { }
+        public Cow() : this("Ingen rank angiven", "Inget namn angivet", "Inget kön angivet", 0, "Ingen föda angivet", "Inget levnadsområde angivet", false, "Ingen färg angivet") { }
 
-        public Elephant(string Rank, string SciName, string Gender, int Age, string Diet, string LivingArea, bool IsWild, double Weight) : base(Rank, SciName, Gender, Age, Diet, LivingArea, IsWild)
+        public Cow(string Rank, string SciName, string Gender, int Age, string Diet, string LivingArea, bool IsWild, string Colour) : base(Rank, SciName, Gender, Age, Diet, LivingArea, IsWild)
         {
-            this._weight = Weight;
+            this._colour = Colour;
         }
 
         public override void MakeSound()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Elefanten låter bahruuuuuuhhhhaaaaa!\n");
+            Console.WriteLine("Kon låter muuuuu...\n");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
 
-        public void Jump()
+        public void LieDown()
         {
-            Console.WriteLine("Elefanten försöker hoppa men det går inte...");
+            Console.WriteLine("Kon lägger sig ner i gräset.");
         }
 
         public override void PrintInfo()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Info för Elefant");
+            Console.WriteLine("Info för ko");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine($"Vetenskapligt namn:\t {_sciName}");
             Console.WriteLine($"Kön:\t\t\t {_gender}");
             Console.WriteLine($"Ålder:\t\t\t {_age}");
             Console.WriteLine($"Föda:\t\t\t { _diet}");
             Console.WriteLine($"Levnadsområde:\t\t { _livingArea}");
-            Console.WriteLine($"Vikt:\t\t\t {_weight} kg");
+            Console.WriteLine($"Färg:\t\t\t {_colour}");
         }
     }
 }

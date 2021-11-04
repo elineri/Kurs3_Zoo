@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Organism
+    public class Organism
     {
         public string _rank;
 

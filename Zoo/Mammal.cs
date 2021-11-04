@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Mammal : Animal
+    public class Mammal : Animal
     {
         public bool _isWild;
 

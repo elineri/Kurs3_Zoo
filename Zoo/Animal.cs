@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Animal : Organism
+    public class Animal : Organism
     {
         public string _sciName;
         public string _gender;
